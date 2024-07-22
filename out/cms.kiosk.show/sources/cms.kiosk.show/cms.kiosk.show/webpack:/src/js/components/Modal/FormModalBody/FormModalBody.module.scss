@@ -1,0 +1,43 @@
+@import '~@Styles/vars';
+@import '~@Styles/mixins';
+
+.content {
+  display: grid;
+  grid-row-gap: 20px;
+}
+
+.topContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.closeIcon {
+  cursor: pointer;
+
+  path {
+    stroke: $lightFadedBlue;
+  }
+
+  &:hover {
+    path {
+      stroke: $white;
+    }
+  }
+}
+
+.input {
+  label {
+    color: $darkGrey;
+  }
+
+  input {
+    max-width: 400px;
+  }
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+}

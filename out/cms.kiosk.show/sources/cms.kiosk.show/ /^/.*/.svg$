@@ -1,0 +1,61 @@
+var map = {
+	"./alignHorizontal.svg": 661,
+	"./alignVertical.svg": 662,
+	"./arrowBottom.svg": 663,
+	"./arrowDown.svg": 664,
+	"./arrowTop.svg": 665,
+	"./arrowUp.svg": 666,
+	"./bold.svg": 667,
+	"./caretBottom.svg": 668,
+	"./caretLeft.svg": 669,
+	"./caretTop.svg": 670,
+	"./circle.svg": 671,
+	"./close.svg": 672,
+	"./dropbox.svg": 673,
+	"./eye.svg": 674,
+	"./fork.svg": 675,
+	"./fullScreen.svg": 676,
+	"./google.svg": 677,
+	"./image.svg": 678,
+	"./imagePlaceholder.svg": 679,
+	"./italic.svg": 680,
+	"./layout.svg": 681,
+	"./line.svg": 682,
+	"./loading.svg": 683,
+	"./more.svg": 684,
+	"./pencil.svg": 685,
+	"./poweredByGiphy.svg": 686,
+	"./qrCode.svg": 687,
+	"./rectangle.svg": 688,
+	"./register.svg": 689,
+	"./rotate.svg": 690,
+	"./search.svg": 691,
+	"./shapes.svg": 692,
+	"./share.svg": 693,
+	"./shareScreen.svg": 694,
+	"./textEdit.svg": 695,
+	"./tick.svg": 696,
+	"./trash.svg": 697,
+	"./triangle.svg": 698,
+	"./underline.svg": 699
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 660;

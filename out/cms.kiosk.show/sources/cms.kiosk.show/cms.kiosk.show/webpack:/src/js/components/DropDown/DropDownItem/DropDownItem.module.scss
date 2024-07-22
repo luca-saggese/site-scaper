@@ -1,0 +1,25 @@
+@import '~@Styles/vars';
+
+.dropdownItem {
+  color: $black;
+  white-space: nowrap;
+  padding: 8px 20px;
+
+  &:hover {
+    color: $kioskPurple;
+    cursor: pointer;
+    font-family: $ptMonoFontFamily;
+    font-style: $fontStyle;
+    font-weight: $bold;
+    font-size: $regularFontSize;
+    line-height: $lowerCaseLinkLineHeight;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+
+  &.disabled,
+  &.disabled:hover {
+    color: $lightGrey !important;
+    cursor: not-allowed;
+  }
+}

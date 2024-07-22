@@ -1,0 +1,74 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+import * as React from "react";
+
+var _ref = /*#__PURE__*/React.createElement("rect", {
+  x: 3.17645,
+  y: 3.21289,
+  width: 20.9412,
+  height: 20.9449,
+  stroke: "white",
+  strokeWidth: 2
+});
+
+var _ref2 = /*#__PURE__*/React.createElement("rect", {
+  x: 1.14703,
+  y: 1.18359,
+  width: 3.58824,
+  height: 3.58898,
+  fill: "#282C40",
+  stroke: "white"
+});
+
+var _ref3 = /*#__PURE__*/React.createElement("rect", {
+  x: 22.5588,
+  y: 1.18359,
+  width: 3.58824,
+  height: 3.58898,
+  fill: "#282C40",
+  stroke: "white"
+});
+
+var _ref4 = /*#__PURE__*/React.createElement("rect", {
+  x: 22.5588,
+  y: 22.5938,
+  width: 3.58824,
+  height: 3.58898,
+  fill: "#282C40",
+  stroke: "white"
+});
+
+var _ref5 = /*#__PURE__*/React.createElement("rect", {
+  x: 1.14703,
+  y: 22.5938,
+  width: 3.58824,
+  height: 3.58898,
+  fill: "#282C40",
+  stroke: "white"
+});
+
+var _ref6 = /*#__PURE__*/React.createElement("path", {
+  d: "M19.697 8.93817H15.413V21.0762H12.536V8.93817H8.231V6.37617H19.697V8.93817Z",
+  fill: "white"
+});
+
+function SvgTextEdit({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 27,
+    height: 27,
+    viewBox: "0 0 27 27",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _ref, _ref2, _ref3, _ref4, _ref5, _ref6);
+}
+
+const ForwardRef = /*#__PURE__*/React.forwardRef(SvgTextEdit);
+export default ForwardRef;

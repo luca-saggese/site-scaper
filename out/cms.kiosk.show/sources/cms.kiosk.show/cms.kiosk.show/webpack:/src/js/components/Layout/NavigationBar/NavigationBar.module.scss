@@ -1,0 +1,15 @@
+@import '~@Styles/vars';
+
+.container {
+  background: $black;
+  display: grid;
+  padding: 0 20px;
+  height: 60px;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid $darkPaleBlue;
+
+  @media (max-width: 768px) {
+    padding: 0 8px;
+  }
+}

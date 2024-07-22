@@ -1,0 +1,15 @@
+@import '~@Styles/vars';
+
+.contentBox {
+  background: $dustyDarkBlue;
+
+  &.style-large {
+    border-radius: $borderRadius;
+    padding: 44px;
+  }
+
+  &.style-medium {
+    border-radius: $mediumBorderRadius;
+    padding: 20px;
+  }
+}

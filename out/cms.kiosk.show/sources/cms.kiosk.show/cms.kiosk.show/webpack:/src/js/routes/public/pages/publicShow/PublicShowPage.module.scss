@@ -1,0 +1,93 @@
+@import '~@Styles/vars';
+
+.container {
+  display: grid;
+  grid-template-rows: 96px 1fr 96px;
+  height: 100vh;
+}
+
+.header {
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $black;
+  border-bottom: 1px solid $fadedBlue;
+}
+
+.kioskInfo {
+  display: grid;
+  grid-row-gap: 10px;
+}
+
+.logo {
+  width: 100px;
+  height: 20px;
+  margin: 0;
+}
+
+.headerButtons {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 70px;
+}
+
+.headerButtonIcon {
+  margin-right: 14px;
+}
+
+.footer {
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $black;
+  border-top: 1px solid $fadedBlue;
+}
+
+.showInfo {
+  display: grid;
+  grid-row-gap: 2px;
+}
+
+.madeByMessage {
+  display: grid;
+  grid-column-gap: 8px;
+  grid-auto-flow: column;
+  align-items: center;
+}
+
+.avatar {
+  width: 20px;
+  height: 20px;
+}
+
+$overZIndex: 999;
+$iconZIndex: 999;
+
+.previewContainer {
+  .fullScreenIcon {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    display: none;
+    z-index: $iconZIndex;
+    cursor: pointer;
+  }
+
+  &:fullscreen {
+    .fullscreenOver,
+    .fullScreenIcon {
+      display: block;
+    }
+  }
+}
+
+.fullscreenOver {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: $overZIndex;
+  background: transparent;
+}

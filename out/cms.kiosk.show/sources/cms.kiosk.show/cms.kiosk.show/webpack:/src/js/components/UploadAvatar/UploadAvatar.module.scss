@@ -1,0 +1,108 @@
+@import '~@Styles/vars';
+
+.container {
+  background-color: $white;
+  color: $dustyDarkBlue;
+  padding: 44px;
+  width: 480px;
+  height: 500px;
+  text-align: left;
+  margin: 0 auto;
+  display: grid;
+  grid-row-gap: 16px;
+
+  .titleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .trashIconContainer {
+      width: 40px;
+      height: 40px;
+      background: $veryLightGrey;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: $borderRadiusCircle;
+      cursor: pointer;
+
+      .trashIcon {
+        path {
+          fill: none;
+        }
+      }
+    }
+  }
+
+  .editorContainer {
+    display: grid;
+    grid-row-gap: 16px;
+  }
+
+  .zoomSliderContainer {
+    display: grid;
+    row-gap: 16px;
+
+    .zoomSliderLabel {
+      color: $darkGrey;
+    }
+
+    .zoomSlider {
+      color: $black;
+
+      :global {
+        .rc-slider-rail {
+          background-color: $lightGrey;
+          height: 1px;
+        }
+
+        .rc-slider-track {
+          background-color: $lightGrey;
+          height: 1px;
+        }
+
+        .rc-slider-handle {
+          margin-top: -10px;
+          width: 20px;
+          height: 20px;
+          background-color: $black;
+          border: none;
+
+          &:focus {
+            background-color: $black;
+            border: none;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+
+  .imageUpload {
+    border: 1px solid $lightGrey;
+    height: 284px;
+
+    &.imageUploadDragOver {
+      width: 350px;
+      height: 350px;
+    }
+  }
+
+  .controlContainer {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 16px;
+    grid-auto-columns: max-content;
+  }
+}
+
+.savingInProgressMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.savingInProgressIcon {
+  margin-left: 10px;
+}

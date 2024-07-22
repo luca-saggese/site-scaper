@@ -1,0 +1,11 @@
+@import '~@Styles/vars';
+
+.container {
+  display: grid;
+  height: 100%;
+  grid-template-rows: max-content auto max-content;
+}
+
+.bodyMinWidth {
+  min-width: $minWidth;
+}

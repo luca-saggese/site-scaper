@@ -1,0 +1,56 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+import * as React from "react";
+
+var _ref = /*#__PURE__*/React.createElement("g", {
+  clipPath: "url(#clip0)"
+}, /*#__PURE__*/React.createElement("path", {
+  d: "M10.8 2.5L10.2 14.4H1.6L1 2.5",
+  stroke: "#010101",
+  strokeMiterlimit: 10
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M0 2.5H11.8",
+  stroke: "#010101",
+  strokeMiterlimit: 10
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M3.3999 2.6V1.2C3.3999 0.8 3.6999 0.5 4.0999 0.5H7.5999C7.9999 0.5 8.2999 0.8 8.2999 1.2V2.5",
+  stroke: "#010101",
+  strokeMiterlimit: 10
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M7.3999 4.7V12.1",
+  stroke: "#010101",
+  strokeMiterlimit: 10
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M4.6001 4.7V12.1",
+  stroke: "#010101",
+  strokeMiterlimit: 10
+}));
+
+var _ref2 = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+  id: "clip0"
+}, /*#__PURE__*/React.createElement("rect", {
+  width: 11.8,
+  height: 14.9,
+  fill: "white"
+})));
+
+function SvgTrash({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 12,
+    height: 15,
+    viewBox: "0 0 12 15",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _ref, _ref2);
+}
+
+const ForwardRef = /*#__PURE__*/React.forwardRef(SvgTrash);
+export default ForwardRef;

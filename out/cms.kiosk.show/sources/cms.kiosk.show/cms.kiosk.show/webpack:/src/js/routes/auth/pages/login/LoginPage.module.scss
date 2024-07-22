@@ -1,0 +1,11 @@
+@import '~@Styles/vars';
+
+.loginContainer {
+  display: grid;
+  row-gap: 16px;
+
+  .typography {
+    justify-self: center;
+    padding-top: 5px;
+  }
+}

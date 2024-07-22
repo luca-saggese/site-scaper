@@ -1,0 +1,10 @@
+@import '~@Styles/vars';
+
+.container {
+  display: grid;
+  grid-row-gap: 4px;
+
+  .label {
+    color: $lightFadedBlue;
+  }
+}

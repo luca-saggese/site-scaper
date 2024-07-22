@@ -1,0 +1,62 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+import * as React from "react";
+
+var _ref = /*#__PURE__*/React.createElement("path", {
+  d: "M0 12H4",
+  stroke: "white",
+  strokeWidth: 2
+});
+
+var _ref2 = /*#__PURE__*/React.createElement("rect", {
+  x: 5,
+  y: 1,
+  width: 4,
+  height: 22,
+  rx: 1,
+  stroke: "white",
+  strokeWidth: 2
+});
+
+var _ref3 = /*#__PURE__*/React.createElement("rect", {
+  x: 15,
+  y: 6,
+  width: 4,
+  height: 12,
+  rx: 1,
+  stroke: "white",
+  strokeWidth: 2
+});
+
+var _ref4 = /*#__PURE__*/React.createElement("path", {
+  d: "M10 12H14",
+  stroke: "white",
+  strokeWidth: 2
+});
+
+var _ref5 = /*#__PURE__*/React.createElement("path", {
+  d: "M20 12H24",
+  stroke: "white",
+  strokeWidth: 2
+});
+
+function SvgAlignVertical({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _ref, _ref2, _ref3, _ref4, _ref5);
+}
+
+const ForwardRef = /*#__PURE__*/React.forwardRef(SvgAlignVertical);
+export default ForwardRef;

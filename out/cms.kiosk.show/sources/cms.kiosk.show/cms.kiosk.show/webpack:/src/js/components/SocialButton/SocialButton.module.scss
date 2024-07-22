@@ -1,0 +1,18 @@
+@import '~@Styles/vars';
+
+.button {
+  border-left: none;
+
+  .iconWrapper {
+    height: 100%;
+    width: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $white;
+  }
+
+  .content {
+    padding: 12px 20px;
+  }
+}

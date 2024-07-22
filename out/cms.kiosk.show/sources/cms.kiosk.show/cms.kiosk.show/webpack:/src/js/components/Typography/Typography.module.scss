@@ -1,0 +1,143 @@
+@import '~@Styles/vars';
+
+.typography {
+  word-break: break-word;
+
+  &.xlBoldHeadline {
+    font-family: $interFontFamily;
+    font-style: $fontStyle;
+    font-weight: $bolder;
+    font-size: $xxLargeFontSize;
+    line-height: $xxLineHeight;
+  }
+
+  &.largeBoldHeadline {
+    font-family: $interFontFamily;
+    font-style: $fontStyle;
+    font-weight: $bold;
+    font-size: $xlargeFontSize;
+    line-height: $xLineHeight;
+  }
+
+  &.mediumHeadline {
+    font-family: $interFontFamily;
+    font-style: $fontStyle;
+    font-weight: $regular;
+    font-size: $largeFontSize;
+    line-height: $largeLineHeight;
+  }
+
+  &.regularHeadline {
+    font-family: $interFontFamily;
+    font-style: $fontStyle;
+    font-weight: $regular;
+    font-size: $mediumFontSize;
+    line-height: $mediumLineHeight;
+  }
+
+  &.tinyHeadline {
+    font-family: $interFontFamily;
+    font-style: $fontStyle;
+    font-weight: $regular;
+    font-size: $smallFontSize;
+    line-height: $smallLineHeight;
+  }
+
+  &.body {
+    font-family: $ptMonoFontFamily;
+    font-style: $fontStyle;
+    font-weight: $normal;
+    font-size: $regularFontSize;
+    line-height: $bodyLineHeight;
+  }
+
+  &.lowerCaseLink {
+    font-family: $ptMonoFontFamily;
+    font-style: $fontStyle;
+    font-weight: $bold;
+    font-size: $regularFontSize;
+    line-height: $lowerCaseLinkLineHeight;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+
+  &.upperCaseLink {
+    font-family: $ptMonoFontFamily;
+    font-style: $fontStyle;
+    font-weight: $bold;
+    font-size: $regularFontSize;
+    line-height: $smallLineHeight;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  &.tinyLink {
+    font-family: $ptMonoFontFamily;
+    font-style: $fontStyle;
+    font-weight: $bold;
+    font-size: $xSmallFontSize;
+    line-height: $tinyLinkLineHeight;
+    letter-spacing: 0.14em;
+  }
+
+  &.smallBody {
+    font-family: $ptMonoFontFamily;
+    font-style: $fontStyle;
+    font-weight: $normal;
+    font-size: $xxSmallFontSize;
+    line-height: $bodyLineHeight;
+  }
+
+  &.mobileHeadline {
+    font-family: $ptMonoFontFamily;
+    font-style: $fontStyle;
+    font-weight: $normal;
+    font-size: $fontSize-26;
+    line-height: $mobileHeadlineLineHeight;
+  }
+
+  &.mobileBody {
+    font-family: $ptMonoFontFamily;
+    font-style: $fontStyle;
+    font-weight: $normal;
+    font-size: $fontSize-16;
+    line-height: $bodyLineHeight;
+  }
+
+  &.mobileLink {
+    font-family: $ptMonoFontFamily;
+    font-style: $fontStyle;
+    font-weight: $bold;
+    font-size: $fontSize-16;
+    line-height: $tinyLinkLineHeight;
+    letter-spacing: 0.14em;
+  }
+
+  &.color-white {
+    color: $white;
+  }
+
+  &.color-black {
+    color: $black;
+  }
+
+  &.color-red {
+    color: $kioskRed;
+  }
+
+  &.color-blue {
+    color: $kioskBlue;
+  }
+
+  &.color-lightFadedBlue {
+    color: $lightFadedBlue;
+  }
+
+  &.color-darkGrey {
+    color: $darkGrey;
+  }
+
+  &.color-lightGrey {
+    color: $lightGrey;
+  }
+}

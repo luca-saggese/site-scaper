@@ -1,0 +1,79 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  color: white;
+  background: url("../../../../images/register_bg.svg") #04091F;
+
+  .badge {
+    margin-bottom: 36px;
+    background: #E089FF;
+    border-radius: 6px;
+    padding: 6px 18px;
+    font-family: 'PT Mono';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 0.14em;
+    text-indent: 1.15px;
+    text-transform: uppercase;
+  }
+
+  .donut {
+    width: 335px;
+    height: 335px;
+    position: absolute;
+    bottom: 0;
+    right: 95px;
+  }
+
+  .qrCodeInfoText {
+    margin-bottom: 52px;
+    font-family: 'PT Mono';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 140%;
+    text-align: center;
+    max-width: 930px;
+  }
+
+  .registrationCode {
+    margin-left: 60px;
+    font-family: 'PT Mono';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 144px;
+    line-height: 140%;
+    text-align: center;
+  }
+
+  .codeContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 90px;
+  }
+
+  .registrationCodeInfoTextContainer {
+    white-space: pre-line;
+    text-align: center;
+  }
+
+  .registrationCodeInfoText {
+    font-family: 'PT Mono';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 140%;
+    color: #717793;
+  }
+
+  .qrCode {
+    border-radius: 20px;
+  }
+}
+

@@ -1,0 +1,30 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+import * as React from "react";
+
+var _ref = /*#__PURE__*/React.createElement("path", {
+  d: "M9.4001 4.9002C1.4001 4.9002 0.600098 13.8002 0.600098 13.8002C0.600098 13.8002 4.0001 10.0002 9.4001 10.4002V14.1002L15.6001 7.7002L9.4001 1.2002V4.9002Z",
+  stroke: "white",
+  strokeMiterlimit: 10
+});
+
+function SvgShare({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 17,
+    height: 16,
+    viewBox: "0 0 17 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _ref);
+}
+
+const ForwardRef = /*#__PURE__*/React.forwardRef(SvgShare);
+export default ForwardRef;

@@ -1,0 +1,39 @@
+@import '~@Styles/vars';
+
+.link {
+  text-transform: none;
+  letter-spacing: normal;
+
+
+  &.light {
+    color: $white;
+
+    &:not(.disabled) {
+      &:hover {
+        color: $kioskPurple;
+      }
+    }
+
+    &.active {
+      color: $kioskPurple;
+    }
+  }
+
+  &.dark {
+    color: $black;
+
+    &:not(.disabled) {
+      &:hover {
+        color: $kioskPurple;
+      }
+    }
+
+    &.active {
+      color: $kioskPurple;
+    }
+  }
+
+  &.disabled {
+    color: $darkGrey;
+  }
+}

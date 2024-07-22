@@ -1,0 +1,24 @@
+@import 'vars';
+
+@font-face {
+  font-family: $interFontFamily;
+  font-style: $fontStyle;
+  font-weight: $bolder;
+  src: url('../fonts/inter/Inter-ExtraBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: $interFontFamily;
+  font-style: $fontStyle;
+  font-weight: $bold;
+  src: url('../fonts/inter/Inter-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: $interFontFamily;
+  font-style: $fontStyle;
+  font-weight: $regular;
+  src: url('../fonts/inter/Inter-Medium.woff2') format('woff2');
+}
+
+@import url('https://fonts.googleapis.com/css?family=PT+Mono&display=swap');

@@ -1,0 +1,31 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+import * as React from "react";
+
+var _ref = /*#__PURE__*/React.createElement("path", {
+  fillRule: "evenodd",
+  clipRule: "evenodd",
+  d: "M27 17H16V16H27V11H28V16V17H27ZM28 7V1V0H27H16V1H27V7H28ZM1 1H12V0H1H0V1V7H1V1ZM1 11H0V16V17H1H12V16H1V11Z",
+  fill: "white"
+});
+
+function SvgFullScreen({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 28,
+    height: 17,
+    viewBox: "0 0 28 17",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _ref);
+}
+
+const ForwardRef = /*#__PURE__*/React.forwardRef(SvgFullScreen);
+export default ForwardRef;

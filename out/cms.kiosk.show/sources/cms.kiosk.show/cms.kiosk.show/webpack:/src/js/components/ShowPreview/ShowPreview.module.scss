@@ -1,0 +1,116 @@
+@import '~@Styles/vars';
+
+.container {
+  overflow: hidden;
+  // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625)
+  padding-top: 56.25%;
+  position: relative;
+  width: 100%;
+
+  .iframe {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1920px;
+    height: 1080px;
+    transform-origin: 0 0;
+    pointer-events: none;
+    background-color: $white;
+  }
+
+  .livePreviewBadge {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: $kioskRed;
+    color: $white;
+    margin: 12px;
+    padding: 2px 6px;
+    text-transform: uppercase;
+    border-radius: $xsBorderRadius;
+  }
+
+  .livePreviewDot {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: $kioskRed;
+    margin: 6px;
+    padding: 6px;
+    border-radius: $borderRadiusCircle;
+  }
+
+  .iframeLoading {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $darkPaleBlue;
+  }
+
+  .previewImage {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    .previewPlaceholderCircle {
+      width: 40%;
+      padding-top: 40%;
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .loaderContainer {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-row-gap: 16px;
+    justify-items: center;
+    align-content: center;
+    background: url("~@Images/background/background-pattern.png");
+
+    .loader {
+      background: none;
+
+      .loaderIcon {
+        width: 48px;
+        height: 48px;
+      }
+    }
+  }
+
+  .showingOnBadge {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: $kioskRed;
+    color: $white;
+    margin: 12px;
+    padding: 2px 6px;
+    text-transform: uppercase;
+    border-radius: $xsBorderRadius;
+  }
+
+  .emptyShowOverlay {
+    left: 0;
+    position: absolute;
+    display: grid;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    align-content: center;
+  }
+}

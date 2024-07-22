@@ -1,0 +1,54 @@
+@import '~@Styles/vars';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+
+  &.dragHover {
+    border-radius: $borderRadiusCircle;
+    justify-self: center;
+    border: 1px dashed $lightGrey;
+  }
+
+  .content {
+    display: grid;
+    grid-row-gap: 16px;
+    align-items: center;
+    justify-content: center;
+
+    .dragAndDropText {
+      padding: 0 12px;
+      text-align: center;
+      color: $darkGrey;
+
+      &.error {
+        color: $kioskRed;
+      }
+    }
+
+    .uploadFileButton {
+      width: fit-content;
+      justify-self: center;
+    }
+  }
+
+  .dragOverContent {
+    display: grid;
+    grid-row-gap: 8px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .dragAndDropTitle {
+      color: $black;
+    }
+
+    .dragAndDropText {
+      color: $darkGrey;
+    }
+  }
+}

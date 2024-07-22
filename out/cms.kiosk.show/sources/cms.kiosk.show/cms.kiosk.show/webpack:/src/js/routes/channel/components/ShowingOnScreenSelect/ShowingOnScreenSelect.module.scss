@@ -1,0 +1,21 @@
+@import '~@Styles/vars';
+@import '~@Styles/mixins';
+
+.loadingIcon {
+  align-self: center;
+}
+
+.noOptionMessage {
+  padding: 8px 20px;
+  text-align: center;
+}
+
+.option {
+  min-width: 300px;
+}
+
+.dropdownContent {
+  max-height: 300px;
+  overflow: auto;
+  @include scrollbar($lightGrey, $white);
+}

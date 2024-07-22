@@ -1,0 +1,61 @@
+@import '~@Styles/vars';
+
+.container {
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+
+  .title {
+    margin-bottom: 16px;
+  }
+
+  .registrationCodeViewInputContainer {
+    margin: 32px 0;
+  }
+
+  .registrationCodeViewInput {
+    padding: 0;
+    color: $white !important;
+    border: 0;
+    caret-color: $white;
+
+    font-family: $ptMonoFontFamily;
+    font-style: $fontStyle;
+    font-weight: $bold;
+    font-size: $xlargeFontSize;
+    line-height: 45px;
+    width: 7.2ch;
+    text-overflow: clip;
+    background: repeating-linear-gradient(90deg, $fadedBlue 0, $fadedBlue 1ch, transparent 0, transparent 1.2ch) 0 bottom/100% 2px no-repeat;
+    letter-spacing: .2ch;
+  }
+
+  .nextAction {
+    margin-top: 20px;
+
+    @media (max-width: 768px) {
+      margin-top: auto;
+    }
+  }
+
+  .bottomContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 8px;
+    margin-top: 34px;
+  }
+
+  .helpContainer {
+    border: 1px solid $lightFadedBlue;
+    border-radius: $xsBorderRadius;
+    padding: 16px;
+    color: $kioskPurple;
+    text-align: center;
+
+    &:hover {
+      color: $hoverPurple;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import '~@Styles/vars';
+
+.screensharingPage {
+  background: url('~@Images/background/mobile-background-pattern.png') 0 52px no-repeat;
+  min-height: 100%;
+
+  $zIndex: 100;
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: $zIndex;
+    width: 70px;
+    height: 70px;
+  }
+
+  .video {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

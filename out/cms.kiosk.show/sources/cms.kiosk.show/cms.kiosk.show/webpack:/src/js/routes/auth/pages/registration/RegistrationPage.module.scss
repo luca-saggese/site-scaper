@@ -1,0 +1,25 @@
+@import '~@Styles/vars';
+
+.registrationMainContainer {
+  display: grid;
+  grid-row-gap: 20px;
+  grid-template-columns: 20px 180px 180px 20px;
+  grid-row: main;
+
+  .registrationContainer {
+    display: grid;
+    grid-row-gap: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid $fadedBlue;
+    grid-column: 1/5;
+  }
+
+  .signInContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+    grid-column: 2/4;
+    align-items: center;
+    justify-content: center;
+  }
+}

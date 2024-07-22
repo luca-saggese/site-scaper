@@ -1,0 +1,11 @@
+@import '~@Styles/vars';
+
+.container {
+  display: flex;
+  margin-left: 8px;
+  border: 1px solid $kioskPurple;
+  border-radius: $xsBorderRadius;
+  color: $kioskPurple;
+  padding: 2px 6px;
+  cursor: pointer;
+}

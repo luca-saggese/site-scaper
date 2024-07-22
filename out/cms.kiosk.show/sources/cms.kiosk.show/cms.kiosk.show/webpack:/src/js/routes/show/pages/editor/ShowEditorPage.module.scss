@@ -1,0 +1,148 @@
+@import '~@Styles/vars';
+@import '~@Styles/mixins';
+
+.grid {
+  grid-template-columns: 293px 1fr;
+  column-gap: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.form {
+  display: contents;
+}
+
+.navigationFields {
+  display: grid;
+  grid-column: details;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: max-content max-content;
+
+  .leftNavigationSection {
+    display: grid;
+    align-items: center;
+    grid-template-columns: max-content max-content max-content;
+  }
+
+  .rightNavigationSection {
+    display: grid;
+    grid-column-gap: 15px;
+    align-items: center;
+    grid-auto-flow: column;
+  }
+
+  .showOptionsDropdown {
+    margin: 0 18px 0 8px;
+  }
+
+  .nameField {
+    input {
+      border: 2px solid transparent;
+      background: none;
+      padding: 4px;
+      margin-left: -7px;
+      color: $white;
+      height: 100%;
+
+      font-family: $interFontFamily;
+      font-style: $fontStyle;
+      font-weight: $regular;
+      font-size: $mediumFontSize;
+      line-height: $mediumLineHeight;
+
+      border-radius: $inputBorderRadius;
+
+      &::placeholder {
+        color: $darkGrey;
+      }
+
+      &:focus {
+        border-color: $kioskPurple;
+      }
+    }
+  }
+
+  .updateHistoryAvatars {
+    cursor: pointer;
+    padding: 3px 6px;
+  }
+}
+
+.leftSideContainer {
+  border-right: 1px solid $fadedBlue;
+  overflow-y: scroll;
+  @include scrollbar($fadedBlue, $black);
+
+  .addSlideContainer {
+    margin: 20px;
+
+    .addSlide {
+      height: 140px;
+      width: 100%;
+      border: 1px solid $fadedBlue;
+      background-color: transparent;
+      color: $white
+    }
+  }
+}
+
+.rightSideContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+
+  &.canvasEditor {
+    padding: 0;
+  }
+
+  .noSlideButton {
+    padding: 20px;
+    background-color: transparent;
+    color: $white;
+    border: 0;
+
+    .eyeIcon {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.editHistoryOverlay {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  background: $black;
+  transition: 300ms transform;
+  overflow: auto;
+  transform: translateX(300px);
+  border-left: 1px solid $fadedBlue;
+  @include scrollbar($fadedBlue, $black);
+
+  &.expanded {
+    transform: translateX(0);
+  }
+}
+
+.bottomContainer {
+  border-top: 1px solid $fadedBlue;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: max-content;
+  align-items: center;
+
+  .showDuration {
+    display: grid;
+    column-gap: 12px;
+    grid-template-columns: max-content max-content;
+  }
+}
+
+.shareIcon,
+.previewIcon {
+  margin-right: 14px;
+}

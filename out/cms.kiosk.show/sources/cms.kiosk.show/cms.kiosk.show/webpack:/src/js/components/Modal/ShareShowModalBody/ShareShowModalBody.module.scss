@@ -1,0 +1,32 @@
+@import '~@Styles/vars';
+
+.container {
+  background-color: $white;
+  color: $dustyDarkBlue;
+  padding: 44px;
+  border-radius: $xsBorderRadius;
+  width: 584px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.infoMessage {
+  background: $kioskTransparentBlue;
+  padding: 16px;
+  margin-top: 28px;
+  border: 1px solid $kioskBlue;
+  display: grid;
+  grid-column-gap: 19px;
+  align-items: center;
+  grid-template-columns: auto max-content;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+
+  .confirmButton {
+    margin-right: 28px;
+  }
+}

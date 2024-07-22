@@ -1,0 +1,37 @@
+@import '~@Styles/vars';
+
+.label {
+  color: $lightFadedBlue;
+  margin-bottom: 4px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  color: $white;
+  border: 0;
+  outline: 0;
+
+  &.selected {
+    .optionButton {
+      color: $white;
+    }
+  }
+
+  .optionButton {
+    height: 19px;
+    width: 19px;
+    margin-right: 10px;
+    border: 1px solid $darkPaleBlue;
+    background: transparent;
+    transition: all 0.2s ease-in;
+    color: transparent;
+  }
+
+  + .option {
+    margin-top: 10px;
+  }
+}
+
+

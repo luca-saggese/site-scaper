@@ -1,0 +1,48 @@
+@import '~@Styles/vars';
+
+.header {
+  display: grid;
+  grid-row-gap: 20px;
+  padding-bottom: 20px;
+
+  .avatar {
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+
+    img {
+      border-radius: $avatarBorderRadius;
+    }
+  }
+}
+
+.details {
+  display: grid;
+  grid-row-gap: 16px;
+
+  .field {
+    border-top: 1px solid $darkPaleBlue;
+    padding: 16px 0 0;
+
+    &.email {
+      &:hover {
+        cursor: not-allowed;
+      }
+    }
+
+    &.password {
+      display: grid;
+      justify-content: space-between;
+      align-items: center;
+      grid-auto-flow: column;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .autoSaveInput {
+      max-width: 65vw;
+    }
+  }
+}

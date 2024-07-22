@@ -1,0 +1,49 @@
+@import '~@Styles/vars';
+
+.container {
+  background: $darkPaleBlue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.headline {
+  margin-bottom: 8px;
+}
+
+.stepsContainer {
+  display: grid;
+  grid-column-gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 273px;
+  margin-top: 40px;
+
+  @media (max-width: 1200px) {
+    width: 200px;
+  }
+
+  @media (max-width: 1000px) {
+    width: 273px;
+  }
+}
+
+.stepImage {
+  width: 100%;
+}
+
+.stepDescription {
+  margin-top: 16px;
+  text-align: center;
+}

@@ -1,0 +1,59 @@
+@import '~@Styles/vars';
+
+.container {
+  grid-template-rows: max-content auto;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    padding: 0 8px;
+  }
+
+  .topContainer {
+    display: flex;
+    grid-column: col-start 1 / col-end 18;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      grid-column: unset;
+    }
+
+    .pageTitle {
+      padding: 31px 0;
+    }
+
+    .controls {
+      padding: 20px 0;
+    }
+  }
+
+  .viewContainer {
+    grid-column: col-start 1 / col-end 18;
+
+    @media (max-width: 768px) {
+      grid-column: unset;
+    }
+  }
+
+  .emptyListContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .listContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    padding: 0 0 40px;
+
+    @media (max-width: 1200px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

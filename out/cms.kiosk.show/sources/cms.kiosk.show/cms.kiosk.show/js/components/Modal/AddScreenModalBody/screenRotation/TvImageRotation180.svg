@@ -1,0 +1,44 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+import * as React from "react";
+
+var _ref = /*#__PURE__*/React.createElement("path", {
+  d: "M326.5 191.5L0.500031 191.5L0.500047 0.499971L326.5 0.5L326.5 191.5Z",
+  stroke: "#717793"
+});
+
+var _ref2 = /*#__PURE__*/React.createElement("path", {
+  d: "M317.341 182.48L9.15451 182.48L9.15452 17.2518L317.341 17.2518L317.341 182.48Z",
+  stroke: "#717793"
+});
+
+var _ref3 = /*#__PURE__*/React.createElement("rect", {
+  x: 149.5,
+  y: 6.11377,
+  width: 27,
+  height: 4.96125,
+  rx: 2.48063,
+  stroke: "#717793"
+});
+
+function SvgTvImageRotation180({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 327,
+    height: 192,
+    viewBox: "0 0 327 192",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _ref, _ref2, _ref3);
+}
+
+const ForwardRef = /*#__PURE__*/React.forwardRef(SvgTvImageRotation180);
+export default __webpack_public_path__ + "static/media/TvImageRotation180.33007603.svg";
+export { ForwardRef as ReactComponent };

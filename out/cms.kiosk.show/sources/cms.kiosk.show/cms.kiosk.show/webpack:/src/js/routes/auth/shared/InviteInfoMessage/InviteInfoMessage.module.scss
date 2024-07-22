@@ -1,0 +1,22 @@
+@import '~@Styles/vars';
+
+.container {
+  display: grid;
+  grid-row-gap: 12px;
+
+  .topContainer {
+    display: grid;
+    align-items: center;
+    grid-column-gap: 10px;
+    grid-template-columns: max-content auto;
+
+    .avatar {
+      width: 42px;
+      height: 42px;
+    }
+  }
+
+  .divider {
+    margin-top: 4px;
+  }
+}

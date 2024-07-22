@@ -1,0 +1,29 @@
+@import '~@Styles/vars';
+
+.header {
+  padding-bottom: 20px;
+}
+
+.field {
+  border-bottom: 1px solid $darkPaleBlue;
+  padding: 12px 0;
+
+  .label {
+    color: $lightFadedBlue;
+    padding-bottom: 8px;
+  }
+
+  .avatar {
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+
+    &.disabled {
+      cursor: not-allowed;
+    }
+
+    img {
+      border-radius: $avatarBorderRadius;
+    }
+  }
+}

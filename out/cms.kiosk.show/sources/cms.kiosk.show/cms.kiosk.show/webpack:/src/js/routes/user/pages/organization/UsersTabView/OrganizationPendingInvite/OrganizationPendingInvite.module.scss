@@ -1,0 +1,39 @@
+@import '~@Styles/vars';
+
+.container {
+
+  .content {
+    padding: 12px 4px 12px 0;
+    display: grid;
+    grid-template-columns: [avatar] max-content [space] 12px [name] max-content [space] auto [role] max-content [space] 12px [dropdown] 20px;
+    align-items: center;
+
+    .pendingStatus {
+      grid-column: role;
+    }
+
+    .emailTo {
+      grid-column: name;
+    }
+
+    .dropdown {
+      grid-column: dropdown;
+    }
+  }
+
+  .divider {
+    border-color: $darkPaleBlue;
+  }
+}
+
+.dropdownContent {
+  min-width: 200px;
+
+  .activeRole {
+    color: $kioskPurple;
+  }
+
+  .remove {
+    color: $kioskRed;
+  }
+}

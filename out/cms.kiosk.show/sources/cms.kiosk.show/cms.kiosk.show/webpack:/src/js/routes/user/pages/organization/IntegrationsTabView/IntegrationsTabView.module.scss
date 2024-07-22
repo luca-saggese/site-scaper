@@ -1,0 +1,30 @@
+@import '~@Styles/vars';
+
+.header {
+  padding-bottom: 32px;
+  border-bottom: 1px solid $darkPaleBlue;
+}
+
+.integration {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $darkPaleBlue;
+  padding: 16px 0;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .integrationInfo {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    grid-column-gap: 12px;
+
+    .integrationUser {
+      color: $lightFadedBlue;
+    }
+  }
+}

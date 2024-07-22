@@ -1,0 +1,175 @@
+@import 'reset';
+@import 'vars';
+@import 'animations';
+@import 'mixins';
+@import 'fonts';
+
+html {
+  //@include scrollbar(10px, $darkPaleBlue, $border-radius, $white);
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+}
+
+body {
+  font-family: $ptMonoFontFamily;
+  font-style: $fontStyle;
+  font-weight: $normal;
+  font-size: $regularFontSize;
+  line-height: $bodyLineHeight;
+  color: $white;
+  background: $black;
+}
+
+#root {
+  height: 100%;
+}
+
+h1 {
+  font-family: $interFontFamily;
+  font-style: $fontStyle;
+  font-weight: $bolder;
+  font-size: $xxLargeFontSize;
+  line-height: $xxLineHeight;
+}
+
+h2 {
+  font-family: $interFontFamily;
+  font-style: $fontStyle;
+  font-weight: $bold;
+  font-size: $xlargeFontSize;
+  line-height: $xLineHeight;
+}
+
+h3 {
+  font-family: $interFontFamily;
+  font-style: $fontStyle;
+  font-weight: $regular;
+  font-size: $largeFontSize;
+  line-height: $largeLineHeight;
+}
+
+h4 {
+  font-family: $interFontFamily;
+  font-style: $fontStyle;
+  font-weight: $regular;
+  font-size: $mediumFontSize;
+  line-height: $mediumLineHeight;
+}
+
+h5 {
+  font-family: $interFontFamily;
+  font-style: $fontStyle;
+  font-weight: $regular;
+  font-size: $smallFontSize;
+  line-height: $smallLineHeight;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+  font-family: $ptMonoFontFamily;
+  font-style: $fontStyle;
+  font-weight: $bold;
+  font-size: $regularFontSize;
+  line-height: $smallLineHeight;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $kioskPurple;
+  }
+}
+
+a,
+a[href],
+input[type='submit'],
+input[type='image'],
+label[for],
+select,
+button,
+.icon,
+.pointer {
+  &:not(.disabled):not([class*='__disabled']):not([class*='__loading']) {
+    cursor: pointer;
+  }
+
+  & &.disabled,
+  &[class*='__disabled'] {
+    cursor: not-allowed;
+  }
+
+  &[class*='__loading'] {
+    cursor: wait;
+  }
+}
+
+input {
+  background: $dustyDarkBlue;
+  padding: 10px;
+  height: 40px;
+  color: $white;
+  caret-color: $kioskPurple;
+  font-family: $ptMonoFontFamily;
+  border: 1px solid $lightGrey;
+  font-size: $regularFontSize;
+}
+
+textarea {
+  background: inherit;
+  width: 100%;
+  color: $white;
+  resize: none;
+  border: none;
+  caret-color: $kioskPurple;
+  font-family: $ptMonoFontFamily;
+  font-size: $regularFontSize;
+  overflow: hidden;
+  padding: 3px 0;
+  min-height: 20px;
+}
+
+label {
+  font-family: $ptMonoFontFamily;
+  font-style: $fontStyle;
+  font-weight: $normal;
+  font-size: $regularFontSize;
+  line-height: $bodyLineHeight;
+  color: $white;
+  cursor: inherit;
+}
+
+// TODO When selecting autocomplete input text font style changes. Check how to override it
+/* Change autocomplete styles in WebKit */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid $lightGrey;
+  -webkit-text-fill-color: $white;
+  -webkit-box-shadow: 0 0 0 1000px $dustyDarkBlue inset;
+  transition: background-color 5000s ease-in-out 0s;
+  font-family: $ptMonoFontFamily;
+  font-style: $fontStyle;
+  font-weight: $normal;
+  font-size: $regularFontSize;
+  line-height: $bodyLineHeight;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

@@ -1,0 +1,58 @@
+@import '~@Styles/vars';
+
+.container {
+  display: grid;
+  justify-content: end;
+  grid-column: settings;
+  grid-auto-flow: column;
+  grid-column-gap: 8px;
+
+  @media (max-width: 768px) {
+    padding: 4px 0;
+  }
+
+  .dropdown {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.dropdownItems {
+  min-width: 200px;
+  padding: 8px 0;
+  grid-row-gap: 4px;
+}
+
+.dropdownItem {
+  padding: 6px 16px;
+}
+
+.userNameDropdownItem {
+  &:hover {
+    color: $black;
+    cursor: auto;
+  }
+
+  .userName {
+    text-overflow: ellipsis;
+    max-width: 200px;
+    overflow: hidden;
+  }
+}
+
+.dropdownDivider {
+  border-color: $darkPaleBlue;
+  opacity: 0.1;
+  margin: 6px 0;
+}
+
+.organizationOption {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  grid-column-gap: 8px;
+}
+
+.activeOrganizationOption {
+  color: $kioskPurple;
+}

@@ -1,0 +1,12 @@
+@import '~@Styles/vars';
+
+.logo {
+  background: inherit;
+  width: 180px;
+  height: 36px;
+  margin: 0 auto;
+
+  &.clickable {
+    cursor: pointer;
+  }
+}

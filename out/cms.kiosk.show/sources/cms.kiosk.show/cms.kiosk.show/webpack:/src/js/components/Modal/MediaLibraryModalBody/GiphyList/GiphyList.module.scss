@@ -1,0 +1,6 @@
+@import '~@Styles/vars';
+
+.noItemsMessage {
+  color: $lightFadedBlue;
+  grid-column: 1/-1;
+}

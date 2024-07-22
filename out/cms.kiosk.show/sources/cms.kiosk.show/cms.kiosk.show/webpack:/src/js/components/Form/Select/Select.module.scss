@@ -1,0 +1,122 @@
+@import '~@Styles/vars';
+@import '~@Styles/mixins';
+
+.container {
+  display: grid;
+  grid-row-gap: 4px;
+  cursor: pointer;
+
+  .label {
+    color: $lightFadedBlue;
+  }
+
+  .button {
+    background: none;
+    border: 0;
+  }
+
+  .error {
+    border: 1px solid $kioskPurple;
+    padding: 4px;
+  }
+
+  .option {
+    color: $black;
+    background-color: $white;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+    grid-auto-flow: column;
+    grid-column-gap: 4px;
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: $white;
+
+      .optionText {
+        color: $kioskPurple;
+        font-weight: $bold;
+        line-height: $lowerCaseLinkLineHeight;
+        text-transform: none;
+        letter-spacing: 0;
+      }
+    }
+
+    &--is-selected {
+      background-color: $white;
+      color: $kioskPurple
+    }
+
+    .selectedText {
+      color: $kioskPurple;
+    }
+
+    .icon {
+      path {
+        fill: $kioskPurple;
+      }
+    }
+  }
+
+  :global {
+    .Select__control {
+      background: inherit;
+      border: none;
+      cursor: pointer;
+      min-height: unset;
+
+      &--is-focused {
+        border: none;
+        outline: none;
+        box-shadow: none;
+      }
+    }
+
+    .Select__value-container {
+      padding: 0;
+      height: 20px;
+      display: flex;
+      flex-wrap: unset;
+    }
+
+    .Select__single-value {
+      margin: 0;
+      position: unset;
+      transform: unset;
+      top: unset;
+    }
+
+    .Select__menu {
+      border-radius: $xsBorderRadius;
+    }
+
+    .Select__menu-list {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      max-height: $dropDownMaxHeight;
+      @include scrollbar($lightGrey, $white);
+    }
+  }
+
+  .style-primary {
+    :global {
+      .Select__single-value {
+        color: $white;
+      }
+    }
+  }
+
+  .style-secondary {
+    :global {
+      .Select__single-value {
+        color: $black;
+      }
+    }
+  }
+}

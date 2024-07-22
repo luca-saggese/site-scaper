@@ -1,0 +1,22 @@
+@import '~@Styles/vars';
+
+.container {
+  display: grid;
+  grid-row-gap: 8px;
+  justify-items: center;
+  align-items: center;
+
+  .icon {
+    width: 15px;
+    height: 15px;
+    cursor: default;
+
+    &:hover {
+      path,
+      circle,
+      line {
+        fill: $white;
+      }
+    }
+  }
+}

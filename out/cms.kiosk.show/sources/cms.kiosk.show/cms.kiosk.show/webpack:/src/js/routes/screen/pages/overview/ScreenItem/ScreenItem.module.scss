@@ -1,0 +1,188 @@
+@import '~@Styles/vars';
+
+.container {
+  width: 100%;
+  position: relative;
+  background: url('~@Images/background/background-pattern.png');
+
+  &:hover {
+    .castScreenButton {
+      opacity: 1;
+    }
+  }
+
+  .castScreenButton {
+    opacity: 0;
+    transition: 300ms all;
+    position: absolute;
+    top: 13.5px;
+    left: 26px;
+    @media (max-width: 1200px) {
+      left: 20px;
+    }
+
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 6px;
+    align-items: center;
+    padding: 4px 6px;
+    border: 0;
+    outline: 0;
+    background: $fadedBlue;
+    color: $white;
+    text-transform: uppercase;
+    border-radius: $xsBorderRadius;
+
+    &:hover {
+      background: $darkPaleBlue;
+    }
+  }
+
+  .previewContainer {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .preview {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .previewOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $black;
+    opacity: 0.6;
+  }
+
+  .infoContainer {
+    position: absolute;
+    bottom: 24px;
+    left: 26px;
+    max-width: calc(100% - 52px);
+
+    @media (max-width: 1200px) {
+      bottom: 18px;
+      left: 20px;
+      max-width: calc(100% - 40px);
+    }
+  }
+
+  .name {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .nameContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .onlineDot {
+    width: 10px;
+    min-width: 10px;
+    height: 10px;
+    margin-left: 6px;
+    border-radius: $borderRadiusCircle;
+    background-color: $kioskRed;
+
+    &.active {
+      background-color: $kioskGreen;
+    }
+  }
+
+  .previewPlaceholder {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .namePlaceholder {
+    width: 260px;
+    height: 38.67px;
+    margin-bottom: 8px;
+  }
+
+  .selectPlaceholder {
+    width: 220px;
+    height: 32px;
+    border-radius: $borderRadius;
+  }
+
+  .controls {
+    position: absolute;
+    top: 13.5px;
+    right: 15.5px;
+    display: flex;
+    align-items: center;
+
+    .previewIcon {
+      display: flex;
+      padding: 2.5px;
+      cursor: pointer;
+    }
+
+    .moreIcon {
+      margin-left: 7px;
+      display: flex;
+      padding: 2.5px;
+    }
+  }
+
+  .chromecastButtonContainer {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    overflow: hidden;
+
+    google-cast-launcher {
+      display: block !important;
+    }
+
+    $zindex: 10;
+    .clickBlocker {
+      width: 100%;
+      height: 100%;
+      z-index: $zindex;
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+
+.chromecastPopover {
+  background: $kioskBlue;
+  padding: 8px 16px;
+  position: relative;
+  max-width: 330px;
+  top: -5px;
+
+  $triangleSize: 8px;
+  &:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: $triangleSize solid transparent;
+    border-right: $triangleSize solid transparent;
+    border-top: $triangleSize solid $kioskBlue;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -$triangleSize;
+  }
+}

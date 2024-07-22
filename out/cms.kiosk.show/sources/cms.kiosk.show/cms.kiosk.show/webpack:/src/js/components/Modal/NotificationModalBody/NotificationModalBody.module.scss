@@ -1,0 +1,25 @@
+@import '~@Styles/vars';
+
+.container {
+  background-color: $white;
+  color: $dustyDarkBlue;
+  padding: 44px;
+  border-radius: $xsBorderRadius;
+  width: auto;
+  margin: 0 auto;
+  display: grid;
+  grid-column-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+
+  .text {
+    color: $dustyDarkBlue;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}

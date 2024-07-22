@@ -1,0 +1,15 @@
+@import '~@Styles/vars';
+
+.container {
+  display: flex;
+
+  .closeIcon {
+    cursor: pointer;
+
+    &:hover {
+      path {
+        stroke: $darkGrey;
+      }
+    }
+  }
+}

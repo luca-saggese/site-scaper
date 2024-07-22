@@ -1,0 +1,99 @@
+@import '~@Styles/vars';
+
+.icon {
+  &.spin {
+    :global {
+      animation: spin 1.5s linear infinite;
+    }
+  }
+
+  &.xxs {
+    width: 6px;
+    height: 6px;
+  }
+
+  &.xs {
+    width: 8.5px;
+    height: 8.5px;
+  }
+
+  &.s {
+    width: 12px;
+    height: 12px;
+  }
+
+  &.m {
+    width: 13px;
+    height: 13px;
+  }
+
+  &.l {
+    width: 25px;
+    height: 25px;
+  }
+
+  &.xl {
+    width: 30px;
+    height: 30px;
+  }
+
+  &.xxl {
+    width: 50px;
+    height: 50px;
+  }
+
+  &.auto {
+    width: 100%;
+    height: 100%;
+  }
+
+  &.primary {
+    path,
+    circle,
+    line {
+      fill: $white;
+    }
+
+    &:hover,
+    &.disabled {
+      path,
+      circle,
+      line {
+        fill: $darkGrey;
+      }
+    }
+
+    &.loading {
+      path,
+      circle,
+      line {
+        fill: $white;
+      }
+    }
+  }
+
+  &.secondary {
+    path,
+    circle,
+    line {
+      fill: $black;
+    }
+
+    &:hover,
+    &.disabled {
+      path,
+      circle,
+      line {
+        fill: $lightFadedBlue;
+      }
+    }
+
+    &.loading {
+      path,
+      circle,
+      line {
+        fill: $black;
+      }
+    }
+  }
+}

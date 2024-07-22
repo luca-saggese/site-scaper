@@ -1,0 +1,30 @@
+@import '~@Styles/vars';
+
+.container {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  width: 200px;
+  height: 200px;
+  grid-row-gap: 8px;
+  border: 1px solid $lightGrey;
+  cursor: pointer;
+
+  .content {
+    display: grid;
+    grid-row-gap: 16px;
+    align-items: center;
+    justify-content: center;
+
+    .dragAndDropText {
+      padding: 0 12px;
+      text-align: center;
+      color: $darkGrey;
+    }
+
+    .uploadFileButton {
+      width: fit-content;
+      justify-self: center;
+    }
+  }
+}

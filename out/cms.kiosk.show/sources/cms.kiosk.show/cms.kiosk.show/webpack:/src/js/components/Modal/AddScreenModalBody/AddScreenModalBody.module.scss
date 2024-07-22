@@ -1,0 +1,29 @@
+@import '~@Styles/vars';
+@import '~@Styles/mixins';
+
+.closeIcon {
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+
+  path {
+    stroke: $lightFadedBlue;
+  }
+
+  &:hover {
+    path {
+      stroke: $white;
+    }
+  }
+}
+
+.savingInProgressMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.savingInProgressIcon {
+  margin-left: 10px;
+}

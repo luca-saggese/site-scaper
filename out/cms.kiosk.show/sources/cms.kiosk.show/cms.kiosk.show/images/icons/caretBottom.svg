@@ -1,0 +1,31 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+import * as React from "react";
+
+var _ref = /*#__PURE__*/React.createElement("path", {
+  fillRule: "evenodd",
+  clipRule: "evenodd",
+  d: "M6.74023 12.1872L0.729827 6.17679L1.43693 5.46968L6.74023 10.773L12.0435 5.46968L12.7506 6.17679L6.74023 12.1872Z",
+  fill: "white"
+});
+
+function SvgCaretBottom({
+  title,
+  titleId,
+  ...props
+}, svgRef) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 13,
+    height: 13,
+    viewBox: "0 0 13 13",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _ref);
+}
+
+const ForwardRef = /*#__PURE__*/React.forwardRef(SvgCaretBottom);
+export default ForwardRef;

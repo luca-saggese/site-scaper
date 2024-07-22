@@ -1,0 +1,25 @@
+@import '~@Styles/vars';
+
+.container {
+  display: inline-block;
+  color: $white;
+  padding: 2px 6px;
+  text-transform: uppercase;
+  border-radius: $xsBorderRadius;
+}
+
+.color-red {
+  background-color: $kioskRed;
+}
+
+.color-purple {
+  background-color: $kioskPurple;
+}
+
+.color-faded-blue {
+  background-color: $fadedBlue;
+}
+
+.color-blue {
+  background-color: $kioskBlue;
+}
