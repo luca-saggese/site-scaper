@@ -1,8 +1,0 @@
-{
-  "name": "reconstructed-package",
-  "version": "1.0.0",
-  "dependencies": {
-    "rc-slider": "*",
-    "react-toastify": "*"
-  }
-}
